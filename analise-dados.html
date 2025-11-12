@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Arrudeio | Portfólio Felippe Moura</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo">FM</div>
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Início</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#projetos">Projetos</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+        <button id="theme-toggle" aria-label="Alternar tema">
+            <svg id="theme-icon" class="icon" viewBox="0 0 24 24">
+            <path d="M21.75 15.5A9 9 0 0110.5 2.25 9 9 0 1021.75 15.5z"/>
+            </svg>
+        </button>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projeto Detalhado -->
+  <section class="project-detail">
+    <div class="project-header">
+      <h1>Business Intelligence</h1>
+      <p class="project-subtitle">Soluções globais personalizadas para gestão com modelo de orientação por resultados.</p>
+    </div>
+
+    <div class="project-content">
+      <!-- Coluna da mídia -->
+      <div class="project-media">
+        <img src="assets/images/dash.png" alt="Dashboard de Vendas">
+    </div>
+
+      <!-- Coluna das informações -->
+      <div class="project-info">
+        <h2>Objetivo do Projeto</h2>
+        <p>Criar um painel interativo no Power BI para análise de vendas e devoluções, acompanhando desempenho e tendências de mercado.</p>
+
+        <h2>Bases de Dados</h2>
+        <ul>
+          <li>Base Vendas: SKU, Produto, Quantidade, Preço, Cliente, Loja, Data</li>
+          <li>Base Devoluções: SKU, Produto, Quantidade Devolvida, Preço, Loja, Data</li>
+        </ul>
+
+        <h2>Principais KPIs / Fórmulas DAX</h2>
+        <ul>
+          <li>Receita Total: <code>SUMX('BaseVendas', 'BaseVendas'[Quantidade Vendida] * 'BaseVendas'[Preço Unitário])</code></li>
+          <li>Impacto Financeiro: <code>SUMX('BaseDevolucoes', 'BaseDevolucoes'[Quantidade Devolvida] * 'BaseDevolucoes'[Preço Unitário])</code></li>
+        </ul>
+
+        <h2>Insights Extraídos</h2>
+        <ul>
+          <li>Faturamento Total: R$99.300.000,00</li>
+          <li>Produto mais vendido: iPhone (HL1918)</li>
+          <li>Maior receita por loja: Loja São Paulo</li>
+          <li>Maior índice de devoluções: SmartWatch (HL7348)</li>
+          <li>Impacto financeiro das devoluções: R$3.800.000,00</li>
+          <li>Mês de maior faturamento: Julho (R$8.758.600,00)</li>
+        </ul>
+
+        <h2>Ferramentas Utilizadas</h2>
+        <div class="tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">Excel</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Notion</span>
+        </div>
+
+        <h2>Arquivos e Recursos</h2>
+        <ul>
+          <li><a href="https://app.powerbi.com/view?r=eyJrIjoiYWFlZGEyZmEtOTExMy00MDEwLWE5OWQtNThlMmFhNDVjZTk0IiwidCI6ImFkYWMzNzYyLWYzMWQtNDliNS1iYWI1LWY3NjcxNzZmZjQyNSJ9" target="_blank">Abrir Dashboard no Power BI</a></li>
+        </ul>
+        <a href="index.html#projetos" class="btn-back">← Voltar aos Projetos</a>
+      </div>
+    </div>
+</section>
+
+
+  <footer>
+    © 2025 Felippe Moura — Análise de Dados & Automação
+  </footer>
+ <script src="js/main.js"></script>
+</body>
+</html>
+
