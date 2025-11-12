@@ -7,8 +7,16 @@
   <!-- EmailJS SDK -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   
-  <!-- Link para o JavaScript -->
-  <script src="js/main.js"></script>
+  <!-- Script de Inicialização do EmailJS -->
+  <script>
+    // Verifique se o EmailJS carregou
+    if (typeof emailjs !== 'undefined') {
+      console.log('✅ EmailJS carregado com sucesso!');
+    } else {
+      console.error('❌ EmailJS não carregou! Verifique a conexão com a internet.');
+    }
+  </script>
+
   <!-- Link para o CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,10 +49,9 @@
       <!-- <img class="profile" src="https://drive.google.com/uc?export=view&id=1MqBbC6zLoyqi2O4NtvA29yiJBibq2UxU" alt="Felippe Moura"> -->
       
       <h1>Felippe Moura</h1>
-      <h2>Engenheiro & Analista de Dados</h2>
+      <h2>Engenheiro & Analista de Dados | Setor Cultural</h2>
       <p class="hero-description">
-        Especialista em transformar dados em insights estratégicos. Experiência em automação de processos, 
-        dashboards interativos e análise preditiva usando Power BI, Python e SQL.
+        Transformo dados em insights para decisões estratégicas. Experiência em dashboards interativos, automação de processos e análise preditiva com Power BI, Python e SQL.
       </p>
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/felippemoura/" target="_blank" title="LinkedIn">
@@ -63,73 +70,82 @@
     </div>
   </section>
 
-  <!-- Sobre -->
   <section id="sobre">
-    <h2 class="section-title">Sobre Mim</h2>
-    <p class="section-subtitle">Experiência e habilidades técnicas</p>
-    <div class="about-grid">
-      <div class="skills-box">
-        <h3 style="margin-bottom:1.5rem">Skills</h3>
-        <div class="skill-item">
-          <div class="skill-name"><span>Power BI</span><span>100%</span></div>
-          <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-name"><span>Python</span><span>80%</span></div>
-          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-name"><span>SQL</span><span>75%</span></div>
-          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-name"><span>Power Automate</span><span>85%</span></div>
-          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-name"><span>Excel</span><span>90%</span></div>
-          <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
-        </div>
+  <h2 class="section-title">Sobre Mim</h2>
+  <p class="section-subtitle">Experiência e habilidades técnicas</p>
+
+  <div class="about-grid">
+    <div class="skills-box">
+      <h3>Skills</h3>
+      <div class="skill-item">
+        <div class="skill-name"><span>Power BI</span><span>100%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
       </div>
-      <div>
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div class="timeline-title">Vice-Presidente</div>
-            <div class="timeline-date">Mar 2025 - Presente</div>
-          </div>
-          <div class="timeline-company">Instituto Camaleão Urbano</div>
-          <ul>
-            <li>Captação de R$ 200.000 em recursos</li>
-            <li>Gestão administrativa e financeira</li>
-            <li>Coordenação de equipe multidisciplinar</li>
-          </ul>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div class="timeline-title">Analista de Dados</div>
-            <div class="timeline-date">Mai 2022 - Mar 2024</div>
-          </div>
-          <div class="timeline-company">Grupo Gabillaud</div>
-          <ul>
-            <li>Dashboards em Power BI</li>
-            <li>Automação com Python e Power Automate</li>
-            <li>Desenvolvimento de fluxos ETL</li>
-          </ul>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div class="timeline-title">Técnico de Som</div>
-            <div class="timeline-date">Jan 2022 - Presente</div>
-          </div>
-          <div class="timeline-company">Doca</div>
-          <ul>
-            <li>Produção de eventos culturais</li>
-            <li>Gestão de projetos para editais</li>
-          </ul>
-        </div>
+      <div class="skill-item">
+        <div class="skill-name"><span>Python</span><span>80%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name"><span>SQL</span><span>75%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name"><span>Power Automate</span><span>85%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name"><span>Excel</span><span>90%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
       </div>
     </div>
-  </section>
+
+    <div class="timeline-box">
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-title">Vice-Presidente</div>
+          <div class="timeline-date">Mar 2025 - Presente</div>
+        </div>
+        <div class="timeline-company">Instituto Camaleão Urbano</div>
+        <ul>
+          <li>Captação de R$ 200.000 em recursos</li>
+          <li>Reconhecimento estadual como <strong>Entidade de Interesse Público</strong> 
+            (<a href="https://drive.google.com/file/d/1HlRDZAOxAfVPfBR2AwejQDCkQRUkzOjh/view?usp=sharing" target="_blank">Lei nº 9.743/2025</a>)</li>
+          <li>Reconhecimento municipal de <strong>Patrimônio Imaterial</strong> pelo projeto Arrudeio 
+            (<a href="https://www.aracaju.se.leg.br/institucional/noticias/cma-reconhece-circuito-arrudeio-como-patrimonio-cultural-e-aprova-em-redacao-final-a-afixacao-de-cartazes-nos-estabelecimentos-revendedores-de-combustiveis-automotivos#:~:text=Cma%20reconhece%20Circuito%20Arrudeio%20como%20patrim%C3%B4nio%20cultural,cartazes%20nos%20estabelecimentos%20revendedores%20de%20combust%C3%ADveis%20automotivos" target="_blank">Notícia - Lei nº 92/2025</a>)</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-title">Analista de Dados</div>
+          <div class="timeline-date">Mai 2022 - Mar 2024</div>
+        </div>
+        <div class="timeline-company">Grupo Gabillaud</div>
+        <ul>
+          <li>Dashboards em Power BI</li>
+          <li>Automação com Python e Power Automate</li>
+          <li>Desenvolvimento de fluxos ETL</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-header">
+            <div class="timeline-title">Técnico de Som & Engenheiro de Eventos</div>
+            <div class="timeline-date">Jan 2022 - Presente</div>
+        </div>
+        <div class="timeline-company">Doca</div>
+        <ul>
+            <li>Produção e operação de eventos culturais e corporativos</li>
+            <li>Montagem de infraestrutura de áudio: cabeamento, microfones, conexões com mesas de som, compressores e potência para sistemas PA (~1.500 kW)</li>
+            <li>Dimensionamento de carga elétrica e planejamento técnico para instalações provisórias</li>
+            <li>Emissão de ART e elaboração de projetos técnicos para contratação de geradores e suporte elétrico temporário</li>
+            <li>Coordenação de equipe técnica</li>
+        </ul>
+        </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Projetos -->
   <section id="projetos">
@@ -139,8 +155,8 @@
       <div class="project-card">
         <div class="project-image">📊</div>
         <div class="project-body">
-          <h3 class="project-title">Dashboard Mosaic</h3>
-          <p class="project-description">Dashboards operacionais e análise de indicadores para Mosaic Fertilizantes</p>
+          <h3 class="project-title">Dashboard x</h3>
+          <p class="project-description">Dashboards operacionais e análise de indicadores para x</p>
           <div class="tags">
             <span class="tag">Power BI</span>
             <span class="tag">ETL</span>
@@ -150,7 +166,7 @@
       <div class="project-card">
         <div class="project-image">⚙️</div>
         <div class="project-body">
-          <h3 class="project-title">Automação Cacto</h3>
+          <h3 class="project-title">Automação y</h3>
           <p class="project-description">Sistema de controle documental automatizado com alertas</p>
           <div class="tags">
             <span class="tag">Python</span>
@@ -161,7 +177,7 @@
       <div class="project-card">
         <div class="project-image">🎯</div>
         <div class="project-body">
-          <h3 class="project-title">Sistema Gama</h3>
+          <h3 class="project-title">Sistema z</h3>
           <p class="project-description">Avaliação de clientes e automação de processos</p>
           <div class="tags">
             <span class="tag">Power BI</span>
