@@ -26,60 +26,37 @@
   </nav>
 
   <!-- Projeto Detalhado -->
-  <section class="project-detail">
-    <div class="project-header">
-      <h1>Desenvolvedor</h1>
-      <p class="project-subtitle">Repósitório deste site no github.</p>
+ <section class="project-detail">
+  <div class="project-header">
+    <h1>Criação de Sites</h1>
+    <p class="project-subtitle">Desenvolvimento de sites responsivos e interativos</p>
+  </div>
+
+  <div class="project-content">
+    <div class="project-media">
+      <img src="assets/images/s1.png" alt="Projeto de Sites">
     </div>
 
-    <div class="project-content">
-      <!-- Coluna da mídia -->
-      <div class="project-media">
-        <img src="assets/images/s1.png" alt="Dashboard de Vendas">
-    </div>
+    <div class="project-info">
+      <h2>Descrição</h2>
+      <p>Projetos de sites responsivos com HTML, CSS e JavaScript, incluindo boas práticas de UX/UI e integração com GitHub.</p>
 
-      <!-- Coluna das informações -->
-      <div class="project-info">
-        <h2>Objetivo do Projeto</h2>
-        <p>Criar um painel interativo no Power BI para análise de vendas e devoluções, acompanhando desempenho e tendências de mercado.</p>
-
-        <h2>Bases de Dados</h2>
-        <ul>
-          <li>Base Vendas: SKU, Produto, Quantidade, Preço, Cliente, Loja, Data</li>
-          <li>Base Devoluções: SKU, Produto, Quantidade Devolvida, Preço, Loja, Data</li>
-        </ul>
-
-        <h2>Principais KPIs / Fórmulas DAX</h2>
-        <ul>
-          <li>Receita Total: <code>SUMX('BaseVendas', 'BaseVendas'[Quantidade Vendida] * 'BaseVendas'[Preço Unitário])</code></li>
-          <li>Impacto Financeiro: <code>SUMX('BaseDevolucoes', 'BaseDevolucoes'[Quantidade Devolvida] * 'BaseDevolucoes'[Preço Unitário])</code></li>
-        </ul>
-
-        <h2>Insights Extraídos</h2>
-        <ul>
-          <li>Faturamento Total: R$99.300.000,00</li>
-          <li>Produto mais vendido: iPhone (HL1918)</li>
-          <li>Maior receita por loja: Loja São Paulo</li>
-          <li>Maior índice de devoluções: SmartWatch (HL7348)</li>
-          <li>Impacto financeiro das devoluções: R$3.800.000,00</li>
-          <li>Mês de maior faturamento: Julho (R$8.758.600,00)</li>
-        </ul>
-
-        <h2>Ferramentas Utilizadas</h2>
-        <div class="tags">
-          <span class="tag">Power BI</span>
-          <span class="tag">Excel</span>
-          <span class="tag">DAX</span>
-          <span class="tag">Notion</span>
-        </div>
-
-        <h2>Arquivos e Recursos</h2>
-        <ul>
-          <li><a href="https://app.powerbi.com/view?r=eyJrIjoiYWFlZGEyZmEtOTExMy00MDEwLWE5OWQtNThlMmFhNDVjZTk0IiwidCI6ImFkYWMzNzYyLWYzMWQtNDliNS1iYWI1LWY3NjcxNzZmZjQyNSJ9" target="_blank">Abrir Dashboard no Power BI</a></li>
-        </ul>
-        <a href="index.html#projetos" class="btn-back">← Voltar aos Projetos</a>
+      <h2>Tecnologias / Ferramentas</h2>
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">GitHub</span>
       </div>
+
+      <h2>Arquivos e Recursos</h2>
+      <ul>
+        <li><a href="https://github.com/seuusuario/nome-do-repositorio" target="_blank">Código no GitHub</a></li>
+      </ul>
+
+      <a href="index.html#projetos" class="btn-back">← Voltar aos Projetos</a>
     </div>
+  </div>
 </section>
 
 
