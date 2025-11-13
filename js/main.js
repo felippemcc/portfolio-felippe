@@ -189,13 +189,9 @@ function initContactForm() {
       form.reset();
       
     } catch (error) {
-      console.error('❌ Erro ao enviar email:', error);
-      
-      let errorMsg = '❌ Erro ao enviar mensagem.\n\n';
-      if (error.text) errorMsg += 'Detalhes: ' + error.text + '\n\n';
-      errorMsg += 'Por favor, tente novamente ou entre em contato:\nfelippe.mcc1@gmail.com';
-      
-      alert(errorMsg);
+  // 🔸 Em caso de erro, apenas reseta o formulário silenciosamente
+      console.warn('Falha ao enviar (modo silencioso). Formulário resetado.');
+      form.reset();
       
     } finally {
       // Reabilita botão
