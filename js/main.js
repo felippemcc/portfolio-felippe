@@ -104,8 +104,6 @@ function initNavbarEffect() {
 
 // ⚠️ CONFIGURAÇÃO DO EMAILJS
 // Substitua com suas credenciais do EmailJS
-
-
 const EMAILJS_CONFIG = {
   publicKey: 'user_aBcDeFgH123456',     // Ex: 'user_aBcDeFgH123456'
   serviceId: 'service_gmail',     // Ex: 'service_gmail'
