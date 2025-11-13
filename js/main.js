@@ -104,10 +104,12 @@ function initNavbarEffect() {
 
 // ⚠️ CONFIGURAÇÃO DO EMAILJS
 // Substitua com suas credenciais do EmailJS
+
+
 const EMAILJS_CONFIG = {
-  publicKey: 'QIjzleQQUaWXp51IZ',     // Ex: 'user_aBcDeFgH123456'
-  serviceId: 'service_1oqwyx5',     // Ex: 'service_gmail'
-  templateId: 'template_q9yq7cm'    // Ex: 'template_contato'
+  publicKey: 'user_aBcDeFgH123456',     // Ex: 'user_aBcDeFgH123456'
+  serviceId: 'service_gmail',     // Ex: 'service_gmail'
+  templateId: 'template_contato'    // Ex: 'template_contato'
 };
 
 function initEmailJS() {
