@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> TCC | Portfólio Felippe Moura</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo">FM</div>
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Início</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#projetos">Projetos</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+        <button id="theme-toggle" aria-label="Alternar tema">
+            <svg id="theme-icon" class="icon" viewBox="0 0 24 24">
+            <path d="M21.75 15.5A9 9 0 0110.5 2.25 9 9 0 1021.75 15.5z"/>
+            </svg>
+        </button>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projeto Detalhado -->
+  <section class="project-detail">
+        <div class="project-header">
+        <h1>Trabalho Final de Graduação</h1>
+        <p class="project-subtitle">Execução de tarefas com manipulador robótico Kuka KR 6 sixx R700 em ambiene de simulação Gazebo.</p>
+        </div>
+
+        <!-- Coluna da mídia -->
+        <div class="project-content">
+        <div class="project-media">
+          <video 
+            src="assets/videos/kuka_srv.mp4" 
+            autoplay 
+            loop 
+            muted 
+            playsinline
+            class="project-video">
+          </video>
+        </div>
+
+      
+      <!-- Coluna das informações -->
+      <div class="project-info">
+        <h2>Descrição</h2>
+        <p>Criação e execução de trajetória para movimento de cinemática por meio de polinômios de ordem superior, em um espaço 3D com configuração de manipulador com 6 graus de liberdade.</p>
+
+        <h2>Destaques</h2>
+        <ul>
+          <li>Criação de um programa pra execução de tarefas de pegar a peça no ponto A de coordenadas (x1,y1,z1) e soltar no ponto B (x2,y2,z2).</li>
+          <li>Registro dos ângulos das juntas por meio de simulação de sensores</li>
+          <li>Plot de dados ilustrando a trajetória do movimento do manipulador robótico.</li>
+        </ul>  
+
+
+        <h2>Tecnologias / Ferramentas</h2>
+        <div class="tags">
+          <span class="tag">c++</span>
+          <span class="tag">ROS2</span>
+          <span class="tag">Gazebo</span>
+          <span class="tag">Linux</span>
+
+        </div>
+
+
+        <h2>Arquivos e Recursos</h2>
+        <ul>
+          <li><a href="https://drive.google.com/file/d/1n2R0oQ9gnw9zibciSQy175QwBMD3Nmxy/view?usp=sharing" target="_blank">🔗 Ver Demonstração → (link teste)</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://drive.google.com/file/d/1xp70SsQXbtb6ft-omWAX6JFmJ-448OVp/view?usp=sharing" target="_blank">💻 Artigo → (link Artigo - TFG)</a></li>
+        </ul>
+
+        <a href="index.html#projetos" class="btn-back">← Voltar aos Projetos</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Felippe Moura — Análise de Dados & Automação
+  </footer>
+ <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -28,7 +28,8 @@
       <ul class="nav-links">
         <li><a href="#hero">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#projetos-tecnicos">Projetos</a></li>
+        <li><a href="#projetos-culturais">Cultura</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
       <button id="theme-toggle" aria-label="Alternar tema">
@@ -75,6 +76,7 @@
   <p class="section-subtitle">Experiência e habilidades técnicas</p>
 
   <div class="about-grid">
+    
     <div class="skills-box">
       <h3>Skills</h3>
       <div class="skill-item">
@@ -107,10 +109,10 @@
         </div>
         <div class="timeline-company">Instituto Camaleão Urbano</div>
         <ul>
-          <li>Captação de R$ 200.000 em recursos</li>
+          <li>Captação de recursos vias editais públicos.</li>
           <li>Reconhecimento estadual como <strong>Entidade de Interesse Público</strong> 
             (<a href="https://drive.google.com/file/d/1HlRDZAOxAfVPfBR2AwejQDCkQRUkzOjh/view?usp=sharing" target="_blank">Lei nº 9.743/2025</a>)</li>
-          <li>Reconhecimento municipal de <strong>Patrimônio Imaterial</strong> pelo projeto Arrudeio 
+          <li>Reconhecimento municipal de <strong>Patrimônio Imaterial</strong> pelo Circuito Arrudeio 
             (<a href="https://www.aracaju.se.leg.br/institucional/noticias/cma-reconhece-circuito-arrudeio-como-patrimonio-cultural-e-aprova-em-redacao-final-a-afixacao-de-cartazes-nos-estabelecimentos-revendedores-de-combustiveis-automotivos#:~:text=Cma%20reconhece%20Circuito%20Arrudeio%20como%20patrim%C3%B4nio%20cultural,cartazes%20nos%20estabelecimentos%20revendedores%20de%20combust%C3%ADveis%20automotivos" target="_blank">Notícia - Lei nº 92/2025</a>)</li>
         </ul>
       </div>
@@ -122,9 +124,11 @@
         </div>
         <div class="timeline-company">Grupo Gabillaud</div>
         <ul>
-          <li>Dashboards em Power BI</li>
-          <li>Automação com Python e Power Automate</li>
-          <li>Desenvolvimento de fluxos ETL</li>
+          <li>ETLs e automações com Python e Power Automate.</li>
+          <li>Dashboards estratégicos em Power BI.</li>
+          <li>Automação de processos administrativos e coleta de dados.</li>
+          <li>Sistema de controle de documentos com alertas inteligentes.</li>
+          <li>Administração de banco de dados e treinamentos internos.</li>
         </ul>
       </div>
 
@@ -135,11 +139,11 @@
         </div>
         <div class="timeline-company">Doca</div>
         <ul>
-            <li>Produção e operação de eventos culturais e corporativos</li>
-            <li>Montagem de infraestrutura de áudio: cabeamento, microfones, conexões com mesas de som, compressores e potência para sistemas PA (~1.500 kW)</li>
-            <li>Dimensionamento de carga elétrica e planejamento técnico para instalações provisórias</li>
-            <li>Elaboração de projetos técnicos para contratação de geradores e suporte elétrico temporário</li>
-            <li>Coordenação de equipe técnica</li>
+            <li>Produção e operação de eventos culturais e corporativos.</li>
+            <li>Montagem de infraestrutura de áudio: cabeamento, microfones, conexões com mesas de som, compressores e potência para sistemas PA.</li>
+            <li>Dimensionamento de carga elétrica e planejamento técnico para instalações provisórias.</li>
+            <li>Elaboração de projetos técnicos para contratação de geradores e suporte elétrico temporário.</li>
+            <li>Coordenação de equipe técnica.</li>
         </ul>
         </div>
     </div>
@@ -147,99 +151,123 @@
 </section>
 
 
-  <!-- Projetos -->
-  <section id="projetos">
-    <h2 class="section-title">Projetos</h2>
-    <p class="section-subtitle">Portfólio de trabalhos desenvolvidos</p>
-    <div class="projects-grid">
+<!-- Projetos Técnicos -->
+<section id="projetos-tecnicos" class="project-section">
+  <h2 class="section-title">Projetos Técnicos</h2>
+  <p class="section-subtitle">Portfólio de trabalhos desenvolvidos</p>
 
-    <!-- Card 1: Instituto Camaleão Urbano -->
+  <div class="projects-grid">
+
+    <!-- Power BI -->
+    <a href="analise-dados.html" class="project-card">
+      <div class="project-image" style="background-image: url('assets/images/pbix.jpg');"></div>
+      <div class="project-body">
+        <h3 class="project-title">Business Intelligence</h3>
+        <p class="project-description">Soluções de dados personalizadas com foco em insights estratégicos.</p>
+        <div class="tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Excel</span>
+          <span class="tag">ETL</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Desenvolvimento Web -->
+    <a href="dev.html" class="project-card">
+      <div class="project-image" style="background-image: url('assets/images/html.jpg');"></div>
+      <div class="project-body">
+        <h3 class="project-title">HTML + CSS + JavaScript</h3>
+        <p class="project-description">Desenvolvimento de interfaces responsivas e interativas.</p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">GitHub</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Controle de Orçamentos -->
+    <a href="proj-rela.html" class="project-card">
+      <div class="project-image" style="background-image: url('assets/images/co2.png');"></div>
+      <div class="project-body">
+        <h3 class="project-title">Controle de Orçamentos</h3>
+        <p class="project-description">Ferramenta interativa de acompanhamento automatizado para projetos.</p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- TFG -->
+    <a href="proj-tcc.html" class="project-card">
+      <div class="project-image" style="background-image: url('assets/images/cpp.png');"></div>
+      <div class="project-body">
+        <h3 class="project-title">TFG</h3>
+        <p class="project-description">Execução com manipulador robótico Kuka em simulação Gazebo.</p>
+        <div class="tags">
+          <span class="tag">C++</span>
+          <span class="tag">ROS2</span>
+          <span class="tag">Gazebo</span>
+          <span class="tag">Linux</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+</div>
+</section>
+
+
+
+<!-- Projetos Culturais -->
+<section id="projetos-culturais" class="project-section">
+<!-- Projetos Culturais -->
+<section id="projetos-culturais" class="project-section">
+  <h2 class="section-title">Projetos Culturais</h2>
+  <p class="section-subtitle">Portfólio de trabalhos no setor de produção cultural</p>
+
+  <div class="projects-grid">
+
+    <!-- Instituto Camaleão Urbano -->
     <a href="projeto-arrudeio.html" class="project-card">
-    <div class="project-image" style="background-image: url('assets/images/camaleaoc.jpg');">
-        <!-- Opcional: ícone ou texto sobre a imagem -->
-    </div>
-    <div class="project-body">
+      <div class="project-image" style="background-image: url('assets/images/camaleaoc.jpg');"></div>
+      <div class="project-body">
         <h3 class="project-title">Gestão de Projetos</h3>
         <p class="project-description">Instituto Camaleão Urbano</p>
         <div class="tags">
-        <span class="tag">Gestão de projetos</span>
-        <span class="tag">Gestão de documentos</span>
-        <span class="tag">Editais públicos</span>
+          <span class="tag">Gestão</span>
+          <span class="tag">Documentos</span>
+          <span class="tag">Editais Públicos</span>
         </div>
-    </div>
+      </div>
     </a>
 
-    <!-- Card 2: Dashboard de Power BI -->
-    <a href="analise-dados.html" class="project-card">
-        <div class="project-image" style="background-image: url('assets/images/dataflow.jpg');">
-            <!-- opcional: ícone sobre a imagem -->
-            <span style="font-size:2rem;"></span>
-        </div>
-        <div class="project-body">
-            <h3 class="project-title">Business Intelligence</h3>
-            <p class="project-description">Inteligência de dados aplicada a todas as áreas da empresa, com soluções personalizadas e foco em resultados.</p>
-            <div class="tags">
-            <span class="tag">Power BI</span>
-            <span class="tag">DAX</span>
-            <span class="tag">Excel</span>
-            <span class="tag">ETL</span>
-            </div>
-        </div>
-    </a>
-    <!-- Card 3: Instituto Camaleão Urbano -->
+    <!-- Produção Técnica -->
     <a href="prod-tec.html" class="project-card">
-    <div class="project-image" style="background-image: url('assets/images/arrudeio-logo.png');">
-        <!-- Opcional: ícone ou texto sobre a imagem -->
-    </div>
-    <div class="project-body">
+      <div class="project-image" style="background-image: url('assets/images/arrudeio-logo.png');"></div>
+      <div class="project-body">
         <h3 class="project-title">Produção Técnica</h3>
         <p class="project-description">Circuito Arrudeio</p>
         <div class="tags">
-        <span class="tag">Montagem técnica</span>
-        <span class="tag">Operação de som</span>
-        <span class="tag">Especificação de Som, Luz e Palco</span> 
+          <span class="tag">Montagem</span>
+          <span class="tag">Som</span>
+          <span class="tag">Luz</span>
+          <span class="tag">Palco</span>
         </div>
-    </div>
+      </div>
     </a>
 
-    <!-- Card 4: Criação de Sites -->
-    <a href="dev.html" class="project-card">
-    <div class="project-image" style="background-image: url('assets/images/dev.png');">
-        <!-- Opcional: ícone ou texto sobre a imagem -->
-    </div>
-    <div class="project-body">
-        <h3 class="project-title">Desenvolvedor front-end</h3>
-        <p class="project-description">Meus repositórios</p>
-        <div class="tags">
-        <span class="tag">html</span>
-        <span class="tag">css</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">GitHub</span> 
-        </div>
-    </div>
-    </a>
-
-    <!-- Card 5: Controle de orçamentos -->
-    <a href="proj-rela.html" class="project-card">
-    <div class="project-image" style="background-image: url('assets/images/co2.png');">
-        <!-- Opcional: ícone ou texto sobre a imagem -->
-    </div>
-    <div class="project-body">
-        <h3 class="project-title">Controle de Orçamentos</h3>
-        <p class="project-description">Ferramenta interativa de acompanhamento e relatório automatizado para projetos culturais.
-</p>
-        <div class="tags">
-        <span class="tag">html</span>
-        <span class="tag">css</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">GitHub</span> 
-        </div>
-    </div>
-    </a>
-
+  </div>
+</section>
 
   </div>
  </section>
+
 
 
   <!-- Contato -->
