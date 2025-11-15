@@ -498,6 +498,291 @@ section {
 
 
 
+/* ============================================
+   ESTILOS DO CARROSSEL - PROJETOS TÉCNICOS
+   Adicione este código ao final do seu style.css
+   ============================================ */
+
+/* Container principal do carrossel */
+.carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/* Wrapper que contém o track */
+.carousel-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* Track que se move */
+.projects-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Botões de navegação */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  color: #667eea;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.carousel-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.carousel-btn-prev {
+  left: 0;
+}
+
+.carousel-btn-next {
+  right: 0;
+}
+
+/* Indicadores (dots) */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #667eea;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.dot:hover {
+  background: rgba(102, 126, 234, 0.5);
+  transform: scale(1.2);
+}
+
+.dot.active {
+  background: #667eea;
+  width: 30px;
+  border-radius: 6px;
+}
+
+/* Ajuste nos cards para o carrossel */
+#projetos-tecnicos .project-card {
+  min-width: calc(33.333% - 20px);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+/* Responsividade */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .carousel-container {
+    padding: 0 50px;
+  }
+  
+  #projetos-tecnicos .project-card {
+    min-width: calc(50% - 15px);
+  }
+  
+  .carousel-btn {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 0 40px;
+  }
+  
+  #projetos-tecnicos .project-card {
+    min-width: calc(100% - 10px);
+  }
+  
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .projects-track {
+    gap: 15px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .carousel-container {
+    padding: 0 30px;
+  }
+  
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .dot.active {
+    width: 24px;
+  }
+}
+
+/* Modo escuro - ajustar se você tiver */
+[data-theme="dark"] .carousel-btn {
+  background: rgba(30, 30, 30, 0.95);
+  color: #a78bfa;
+}
+
+[data-theme="dark"] .carousel-btn:hover {
+  background: #a78bfa;
+  color: #1e1e1e;
+}
+
+[data-theme="dark"] .dot {
+  border-color: #a78bfa;
+}
+
+[data-theme="dark"] .dot.active {
+  background: #a78bfa;
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Suavizar transição ao arrastar */
+.projects-track.dragging {
+  transition: none;
+  cursor: grabbing;
+}
+
+
+/* ========================================
+   PS SECTION
+======================================== */
+
+#ps {
+  background: var(--bg-secondary);
+}
+
+.ps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.ps-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ps-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.ps-item .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.ps-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ps-form input,
+.ps-form textarea {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.ps-form input:focus,
+.ps-form textarea:focus {
+  outline: none;
+  border-color: var(--hover-color);
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, var(--hover-color), #0b78ff);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+}
+
+
+
+
 /* ========================================
    CONTATO SECTION
 ======================================== */
@@ -567,6 +852,9 @@ section {
   transform: translateY(-2px);
 }
 
+
+
+
 /* ========================================
    FOOTER
 ======================================== */
@@ -604,3 +892,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+

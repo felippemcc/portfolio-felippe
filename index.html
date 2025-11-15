@@ -9,7 +9,6 @@
   
   <!-- Script de Inicialização do EmailJS -->
   <script>
-    // Verifique se o EmailJS carregou
     if (typeof emailjs !== 'undefined') {
       console.log('✅ EmailJS carregado com sucesso!');
     } else {
@@ -29,7 +28,7 @@
         <li><a href="#hero">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#projetos-tecnicos">Projetos</a></li>
-        <li><a href="#projetos-culturais">Cultura</a></li>
+        <li><a href="#ps">Cultura</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
       <button id="theme-toggle" aria-label="Alternar tema">
@@ -43,12 +42,7 @@
   <!-- Hero -->
   <section id="hero">
     <div class="hero-content">
-      <!-- OPÇÃO 1: Foto local (depois que você colocar na pasta) -->
       <img class="profile" src="assets/images/profile.jpg" alt="Felippe Moura">
-      
-      <!-- OPÇÃO 2: Foto do Google Drive (funciona agora) -->
-      <!-- <img class="profile" src="https://drive.google.com/uc?export=view&id=1MqBbC6zLoyqi2O4NtvA29yiJBibq2UxU" alt="Felippe Moura"> -->
-      
       <h1>Felippe Moura</h1>
       <h2>Engenheiro & Analista de Dados | Setor Cultural</h2>
       <p class="hero-description">
@@ -151,83 +145,179 @@
 </section>
 
 
-<!-- Projetos Técnicos -->
+<!-- Projetos Técnicos - CARROSSEL IMPLEMENTADO -->
 <section id="projetos-tecnicos" class="project-section">
   <h2 class="section-title">Projetos Técnicos</h2>
   <p class="section-subtitle">Portfólio de trabalhos desenvolvidos</p>
 
-  <div class="projects-grid">
+  <!-- Container do Carrossel -->
+  <div class="carousel-container">
+    <!-- Botão Anterior -->
+    <button class="carousel-btn carousel-btn-prev" aria-label="Projeto anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
 
-    <!-- Power BI -->
-    <a href="analise-dados.html" class="project-card">
-      <div class="project-image" style="background-image: url('assets/images/pbix.jpg');"></div>
-      <div class="project-body">
-        <h3 class="project-title">Business Intelligence</h3>
-        <p class="project-description">Soluções de dados personalizadas com foco em insights estratégicos.</p>
-        <div class="tags">
-          <span class="tag">Power BI</span>
-          <span class="tag">DAX</span>
-          <span class="tag">Excel</span>
-          <span class="tag">ETL</span>
-        </div>
-      </div>
-    </a>
+    <!-- Wrapper dos Projetos -->
+    <div class="carousel-wrapper">
+      <div class="projects-track">
+        
+        <!-- Power BI -->
+        <a href="analise-dados.html" class="project-card">
+          <div class="project-image" style="background-image: url('assets/images/pbix.jpg');"></div>
+          <div class="project-body">
+            <h3 class="project-title">Business Intelligence</h3>
+            <p class="project-description">Soluções de dados personalizadas com foco em insights estratégicos.</p>
+            <div class="tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">DAX</span>
+              <span class="tag">Excel</span>
+              <span class="tag">ETL</span>
+            </div>
+          </div>
+        </a>
 
-    <!-- Desenvolvimento Web -->
-    <a href="dev.html" class="project-card">
-      <div class="project-image" style="background-image: url('assets/images/html.jpg');"></div>
-      <div class="project-body">
-        <h3 class="project-title">HTML + CSS + JavaScript</h3>
-        <p class="project-description">Desenvolvimento de interfaces responsivas e interativas.</p>
-        <div class="tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">GitHub</span>
-        </div>
-      </div>
-    </a>
+        <!-- Desenvolvimento Web -->
+        <a href="dev.html" class="project-card">
+          <div class="project-image" style="background-image: url('assets/images/html.jpg');"></div>
+          <div class="project-body">
+            <h3 class="project-title">HTML + CSS + JavaScript</h3>
+            <p class="project-description">Desenvolvimento de interfaces responsivas e interativas.</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">GitHub</span>
+            </div>
+          </div>
+        </a>
 
-    <!-- Controle de Orçamentos -->
-    <a href="proj-rela.html" class="project-card">
-      <div class="project-image" style="background-image: url('assets/images/co2.png');"></div>
-      <div class="project-body">
-        <h3 class="project-title">Controle de Orçamentos</h3>
-        <p class="project-description">Ferramenta interativa de acompanhamento automatizado para projetos.</p>
-        <div class="tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
-        </div>
-      </div>
-    </a>
+         <!-- Python -->
+        <a href="proj-py.html" class="project-card">
+          <div class="project-image" style="background-image: url('assets/images/py.png');"></div>
+          <div class="project-body">
+            <h3 class="project-title">Python</h3>
+            <p class="project-description">Análise de dados e Automação de processos (Panda, Numpy, Selenium, etc)</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Selenium</span>
+            </div>
+          </div>
+        </a>
 
-    <!-- TFG -->
-    <a href="proj-tcc.html" class="project-card">
-      <div class="project-image" style="background-image: url('assets/images/cpp.png');"></div>
-      <div class="project-body">
-        <h3 class="project-title">TFG</h3>
-        <p class="project-description">Execução com manipulador robótico Kuka em simulação Gazebo.</p>
-        <div class="tags">
-          <span class="tag">C++</span>
-          <span class="tag">ROS2</span>
-          <span class="tag">Gazebo</span>
-          <span class="tag">Linux</span>
-        </div>
+        <!-- Controle de Orçamentos -->
+        <a href="proj-rela.html" class="project-card">
+          <div class="project-image" style="background-image: url('assets/images/co2.png');"></div>
+          <div class="project-body">
+            <h3 class="project-title">Controle de Orçamentos</h3>
+            <p class="project-description">Ferramenta interativa de acompanhamento automatizado para projetos.</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- TFG -->
+        <a href="proj-tcc.html" class="project-card">
+          <div class="project-image" style="background-image: url('assets/images/cpp.png');"></div>
+          <div class="project-body">
+            <h3 class="project-title">C++</h3>
+            <p class="project-description">Execução com manipulador robótico Kuka em simulação Gazebo.</p>
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">ROS2</span>
+              <span class="tag">Gazebo</span>
+              <span class="tag">Linux</span>
+            </div>
+          </div>
+        </a>
+
       </div>
-    </a>
+    </div>
+
+    <!-- Botão Próximo -->
+    <button class="carousel-btn carousel-btn-next" aria-label="Próximo projeto">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Indicadores de posição (dots) -->
+  <div class="carousel-dots">
+    <button class="dot active" data-index="0"></button>
+    <button class="dot" data-index="1"></button>
+    <button class="dot" data-index="2"></button>
+    <button class="dot" data-index="3"></button>
 
   </div>
 </section>
-</div>
-</section>
+
+<!-- Projetos Técnicos -->
+
+<!-- <section id="projetos-tecnicos" class="project-section">
+  <h2 class="section-title">Projetos técnicos 2</h2>
+  <p class="section-subtitle">Portfólio de trabalhos desenvolvidos</p>
+
+  <div class="projects-grid"> -->
+
+    <!-- Power BI -->
+    <!-- <a href="analise-dados.html" class="project-card">
+      <div class="project-image" style="background-image: url('assets/images/pbix.jpg');"></div>
+        <div class="project-body">
+          <h3 class="project-title">Business Intelligence</h3>
+          <p class="project-description">Soluções de dados personalizadas com foco em insights estratégicos.</p>
+          <div class="tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Excel</span>
+            <span class="tag">ETL</span>
+        </div>
+      </div>
+    </a> -->
+
+    <!-- Desenvolvimento Web -->
+      <!-- <a href="dev.html" class="project-card">
+        <div class="project-image" style="background-image: url('assets/images/html.jpg');"></div>
+          <div class="project-body">
+            <h3 class="project-title">HTML + CSS + JavaScript</h3>
+            <p class="project-description">Desenvolvimento de interfaces responsivas e interativas.</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">GitHub</span>
+            </div>
+        </div>
+      </a>
+   -->
+    <!-- TFG -->
+      <!-- <a href="proj-tcc.html" class="project-card">
+        <div class="project-image" style="background-image: url('assets/images/cpp.png');"></div>
+          <div class="project-body">
+            <h3 class="project-title">C++</h3>
+            <p class="project-description">Execução com manipulador robótico Kuka em simulação Gazebo.</p>
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">ROS2</span>
+              <span class="tag">Gazebo</span>
+              <span class="tag">Linux</span>
+          </div>
+        </div>
+      </a>
+
+  </div>
+</section> -->
+
 
 
 
 <!-- Projetos Culturais -->
-<section id="projetos-culturais" class="project-section">
-<!-- Projetos Culturais -->
-<section id="projetos-culturais" class="project-section">
+<section id="ps" class="project-section">
   <h2 class="section-title">Projetos Culturais</h2>
   <p class="section-subtitle">Portfólio de trabalhos no setor de produção cultural</p>
 
@@ -265,10 +355,6 @@
   </div>
 </section>
 
-  </div>
- </section>
-
-
 
   <!-- Contato -->
   <section id="contato">
@@ -287,7 +373,6 @@
         <div class="contact-item">
           <svg class="icon" viewBox="0 0 24 24"><path d="M12.04 2.01C6.5 2.01 2 6.5 2 12.04c0 1.88.49 3.61 1.35 5.13L2 22l5-1.31a10 10 0 0 0 5.04 1.35c5.54 0 10.04-4.49 10.04-10.04 0-5.54-4.5-10.03-10.04-10.03zm0 18.06a8.01 8.01 0 0 1-4.09-1.12l-.29-.17-2.94.77.79-2.87-.19-.3a7.97 7.97 0 0 1-1.23-4.32 8.03 8.03 0 0 1 8.06-8.06 8.02 8.02 0 0 1 8.06 8.06 8.03 8.03 0 0 1-8.06 8.06zm4.46-5.98c-.25-.12-1.48-.73-1.71-.81-.23-.09-.4-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.06-.39-2.03-1.24-.75-.67-1.26-1.5-1.4-1.74-.15-.25-.02-.38.11-.5.12-.12.25-.29.37-.44.12-.15.15-.25.23-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.41-.56-.42l-.48-.01c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.45 1.03 2.62c.12.17 1.77 2.7 4.3 3.79.6.26 1.06.42 1.42.54.6.19 1.15.16 1.59.1.48-.07 1.48-.6 1.69-1.19.21-.6.21-1.11.15-1.23-.06-.12-.23-.19-.48-.31z"/></svg>
           <a href="https://wa.me/5579998451001" style="color:var(--text-color);text-decoration:none">(79) 99845-1001</a>
-          <!-- <span>+55 (79) 99845-1001</span> -->
         </div>
         <div class="contact-item">
           <svg class="icon" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
