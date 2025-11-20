@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Labels Generator | Portfólio Felippe Moura</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo">FM</div>
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Início</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#projetos">Projetos</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+        <button id="theme-toggle" aria-label="Alternar tema">
+            <svg id="theme-icon" class="icon" viewBox="0 0 24 24">
+            <path d="M21.75 15.5A9 9 0 0110.5 2.25 9 9 0 1021.75 15.5z"/>
+            </svg>
+        </button>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projeto Detalhado -->
+  <section class="project-detail">
+    <div class="project-header">
+      <h1>Image Labels Generator</h1>
+      <p class="project-subtitle">Aplicação web para análise automática de imagens usando AWS Rekognition e Machine Learning.</p>
+    </div>
+
+    <div class="project-content">
+      <!-- Coluna da mídia -->
+      <div class="project-media">
+        <video 
+          src="assets/videos/reko-img.mp4" 
+          autoplay 
+          loop 
+          muted 
+          playsinline
+          class="project-video"
+          poster="assets/images/aws.png">
+        </video>
+      </div>
+
+      <!-- Coluna das informações -->
+      <div class="project-info">
+        <h2>Descrição</h2>
+        <p>Aplicação full-stack que utiliza o serviço AWS Rekognition para identificar automaticamente objetos, cenas e conceitos em imagens. Os usuários podem fazer upload de imagens via drag-and-drop e receber análises detalhadas com níveis de confiança ajustáveis em tempo real.</p>
+
+        <h2>Destaques</h2>
+        <ul>
+          <li>Interface web responsiva com upload de imagens via drag-and-drop ou seleção manual</li>
+          <li>Integração completa com AWS Rekognition para análise de imagens com IA</li>
+          <li>API RESTful desenvolvida em Flask com validação de dados e tratamento de erros</li>
+          <li>Visualização de resultados com barras de confiança e filtro ajustável</li>
+          <li>Deploy automatizado com frontend no Netlify e documentação completa no GitHub</li>
+        </ul>
+
+        <h2>Tecnologias / Ferramentas</h2>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">AWS Rekognition</span>
+          <span class="tag">Boto3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">REST API</span>
+          <span class="tag">AWS IAM</span>
+        </div>
+
+        <h2>Arquivos e Recursos</h2>
+        <ul>
+          <li><a href="https://rekognition-img.netlify.app/" target="_blank">🌐 Ver Demonstração Online →</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://github.com/felippemcc/rekognition-image-labels" target="_blank">💻 Código no GitHub →</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://github.com/felippemcc/rekognition-image-labels#readme" target="_blank">📖 Documentação Completa →</a></li>
+        </ul>
+
+        <a href="index.html#projetos" class="btn-back">← Voltar aos Projetos</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Felippe Moura — Análise de Dados & Automação
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
