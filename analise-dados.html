@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business Intelligence | Portfólio Felippe Moura</title>
+  <title>Dashboard de Gestão de Projetos | Portfólio Felippe Moura</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -29,54 +29,73 @@
   <!-- Projeto Detalhado -->
   <section class="project-detail">
     <div class="project-header">
-      <h1>Business Intelligence</h1>
-      <p class="project-subtitle">Desenvolvemos soluções de BI adaptadas a cada área da sua empresa — RH, Financeiro, Projetos e outras — sempre orientadas por resultados mensuráveis.</p>
+      <h1>Dashboard de Gestão de Projetos</h1>
+      <p class="project-subtitle">Solução completa de Business Intelligence para análise estratégica de portfólio de projetos, com foco em performance operacional, gestão de recursos e tomada de decisão baseada em dados.</p>
     </div>
 
     <div class="project-content">
       <!-- Coluna da mídia -->
-      <div class="project-media">
-        <img src="assets/images/dash.png" alt="Dashboard de Vendas">
-    </div>
+      <!-- Coluna da mídia -->
+        <div class="project-content">
+        <div class="project-media">
+          <video 
+            src="assets/videos/bi-proj.mp4" 
+            autoplay 
+            loop 
+            muted 
+            playsinline
+            class="project-video">
+          </video>
+        </div>
 
       <!-- Coluna das informações -->
       <div class="project-info">
         <h2>Objetivo do Projeto</h2>
-        <p>Criar um painel interativo no Power BI para análise de vendas e devoluções, acompanhando desempenho e tendências de mercado.</p>
+        <p>Dashboard executivo para monitoramento de projetos em tempo real, com análise de performance por setor, responsável e status, focado em otimização de recursos.</p>
 
         <h2>Bases de Dados</h2>
         <ul>
-          <li>Base Vendas: SKU, Produto, Quantidade, Preço, Cliente, Loja, Data</li>
-          <li>Base Devoluções: SKU, Produto, Quantidade Devolvida, Preço, Loja, Data</li>
+          <li>Projetos: Código, Setor, Responsável, Status, Datas</li>
+          <li>Financeiro: Valores Orçados, Negociados e Descontos</li>
         </ul>
 
-        <h2>Principais KPIs / Fórmulas DAX</h2>
+        <h2>Principais KPIs</h2>
         <ul>
-          <li>Receita Total: <code>SUMX('BaseVendas', 'BaseVendas'[Quantidade Vendida] * 'BaseVendas'[Preço Unitário])</code></li>
-          <li>Impacto Financeiro: <code>SUMX('BaseDevolucoes', 'BaseDevolucoes'[Quantidade Devolvida] * 'BaseDevolucoes'[Preço Unitário])</code></li>
+          <li>Valor Total Negociado, Ticket Médio e Taxa de Conversão</li>
+          <li>Total de Descontos e Impacto Financeiro</li>
+          <li>Tempo Médio de Fechamento</li>
         </ul>
 
         <h2>Insights Extraídos</h2>
         <ul>
-          <li>Faturamento Total: R$99.300.000,00</li>
-          <li>Produto mais vendido: iPhone (HL1918)</li>
-          <li>Maior receita por loja: Loja São Paulo</li>
-          <li>Maior índice de devoluções: SmartWatch (HL7348)</li>
-          <li>Impacto financeiro das devoluções: R$3.800.000,00</li>
-          <li>Mês de maior faturamento: Julho (R$8.758.600,00)</li>
+          <li>Comercial e TI concentram 45% do valor negociado</li>
+          <li>40% dos projetos em prospecção, 15% finalizados</li>
+          <li>Descontos estratégicos de 8,5% gerando flexibilidade comercial</li>
+          <li>Ciclo médio de vendas: 45 dias</li>
+        </ul>
+
+        <h2>Funcionalidades</h2>
+        <ul>
+          <li>Filtros dinâmicos por Setor e Status</li>
+          <li>Gráficos interativos (barras, quadros, etc)</li>
+          <li>Cards de KPIs</li>
+          <li>Ranking de responsáveis e análise temporal</li>
         </ul>
 
         <h2>Ferramentas Utilizadas</h2>
         <div class="tags">
-          <span class="tag">Power BI</span>
-          <span class="tag">Excel</span>
-          <span class="tag">DAX</span>
-          <span class="tag">Notion</span>
+          <span class="tag">React</span>
+          <span class="tag">Recharts</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Google Sheets API</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">HTML/CSS</span>
         </div>
 
         <h2>Arquivos e Recursos</h2>
         <ul>
-          <li><a href="https://app.powerbi.com/view?r=eyJrIjoiYWFlZGEyZmEtOTExMy00MDEwLWE5OWQtNThlMmFhNDVjZTk0IiwidCI6ImFkYWMzNzYyLWYzMWQtNDliNS1iYWI1LWY3NjcxNzZmZjQyNSJ9" target="_blank">Abrir Dashboard no Power BI</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1oxdj8jwwPUxm2AdeS19q9F1e6QPvrfTs/edit?usp=sharing&ouid=116858139908954208577&rtpof=true&sd=true" target="_blank">Base de Dados (Google Sheets)</a></li>
+          <li><a href="https://app.powerbi.com/view?r=eyJrIjoiYzU1YTNmMmUtM2ZlYS00MzQ4LThjYzktMjUyZWNlNmI1ODgxIiwidCI6ImFkYWMzNzYyLWYzMWQtNDliNS1iYWI1LWY3NjcxNzZmZjQyNSJ9" target="_blank">Visualizar Dashboard Interativo</a></li>
         </ul>
         <a href="index.html#projetos-tecnicos" class="btn-back">← Voltar aos Projetos</a>
       </div>
@@ -90,4 +109,3 @@
  <script src="js/main.js"></script>
 </body>
 </html>
-
